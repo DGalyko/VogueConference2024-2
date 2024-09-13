@@ -32,3 +32,11 @@ const speakers = () => {
     })
 }
 speakers();
+
+const video = () => {
+    let video = document.querySelectorAll('.about__video');
+    video.forEach((item)  => {
+        item .play();
+    })
+}
+video();

@@ -176,12 +176,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 61px);
   background: url("../assets/img/first-back-d.jpg") no-repeat center;
   background-size: cover;
-  @media (max-width: 767px) {
-    height: 100vh;
+  @media (max-width: 1279px) {
     background: url("../assets/img/first-back-m.jpg") no-repeat center;
+    background-size: cover;
   }
   .container {
     display: flex;
@@ -190,8 +189,10 @@ p {
   img {
     max-width: 386px;
     @media (max-width: 767px) {
-      max-width: 100%;
+      max-width: 80%;
       height: auto;
+      aspect-ratio: 1;
+      margin: 0 auto;
     }
   }
   &__date {
@@ -220,6 +221,25 @@ p {
     @media (max-width: 1279px) {
       display: none;
       font-size: 22px;
+    }
+  }
+  &__video {
+    &_mobile {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &_desktop {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+      }
     }
   }
 }
@@ -258,10 +278,16 @@ p {
 
 .text {
   .container {
-    padding: 80px 18px;
+    padding: 30px 18px;
+    @media (min-width: 1280px) {
+      padding: 80px 18px;
+    }
   }
   .title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
   }
   p {
     margin-bottom: 30px;
@@ -294,25 +320,24 @@ p {
   a {
     display: flex;
     img {
-      max-height: 90px;
+      max-height: 140px;
       @media (max-width: 767px) {
-        max-height: 70px;
+        max-height: 90px;
       }
     }
     &:nth-child(3) {
       img {
-        max-height: 120px;
+        max-height: 140px;
         @media (max-width: 767px) {
           max-height: 80px;
-          padding: 0 12px;
         }
       }
     }
     &:nth-child(1) {
       img {
-        max-height: 100px;
+        max-height: 160px;
         @media (max-width: 767px) {
-          max-height: 70px;
+          max-height: 100px;
         }
       }
     }
@@ -531,6 +556,14 @@ p {
       &:nth-child(2) {
         font-weight: 700;
         margin-bottom: 12px;
+      }
+    }
+    a {
+      text-decoration: underline;
+      transition: 0.2s ease-out;
+      &:hover {
+        text-decoration: none;
+        color: #0000FF;
       }
     }
   }
