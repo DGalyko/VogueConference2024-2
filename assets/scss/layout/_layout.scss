@@ -333,14 +333,14 @@ p {
         }
       }
     }
-    &:nth-child(1) {
-      img {
-        max-height: 160px;
-        @media (max-width: 767px) {
-          max-height: 100px;
-        }
-      }
-    }
+    //&:nth-child(1) {
+    //  img {
+    //    max-height: 160px;
+    //    @media (max-width: 767px) {
+    //      max-height: 100px;
+    //    }
+    //  }
+    //}
     &:nth-child(4) {
       img {
         max-height: 120px;
