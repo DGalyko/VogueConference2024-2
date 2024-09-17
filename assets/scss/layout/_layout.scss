@@ -313,7 +313,6 @@ p {
     height: 112px;
     @media (max-width: 767px) {
       grid-gap: 0;
-      margin-left: -18px;
       height: 120px;
     }
   }
@@ -322,31 +321,24 @@ p {
     img {
       max-height: 140px;
       @media (max-width: 767px) {
-        max-height: 90px;
+        max-height: 74px!important;
+      }
+    }
+    &:nth-child(2) {
+      img {
+        @media (max-width: 767px) {
+          padding: 0 24px;
+        }
       }
     }
     &:nth-child(3) {
       img {
         max-height: 140px;
-        @media (max-width: 767px) {
-          max-height: 80px;
-        }
       }
     }
-    //&:nth-child(1) {
-    //  img {
-    //    max-height: 160px;
-    //    @media (max-width: 767px) {
-    //      max-height: 100px;
-    //    }
-    //  }
-    //}
     &:nth-child(4) {
       img {
         max-height: 120px;
-        @media (max-width: 767px) {
-          max-height: 95px;
-        }
       }
     }
   }
