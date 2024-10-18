@@ -488,12 +488,12 @@ p {
 }
 
 .schedule {
-  margin: 100px 0;
+  margin: 100px 0 0;
   @media (max-width: 767px) {
     margin: 0;
   }
   .container {
-    padding: 0 18px 80px;
+    padding: 0 18px 0;
   }
   &__container {
     max-width: 800px;
@@ -534,6 +534,7 @@ p {
       }
       &:nth-child(2) {
         margin-top: 4px;
+        font-weight: 400;
       }
     }
   }
@@ -752,5 +753,15 @@ p {
     @media (max-width: 767px) {
       margin: 60px auto 100px;
     }
+  }
+}
+
+.text-new {
+  .title {
+    text-transform: uppercase;
+  }
+  strong {
+    display: flex;
+    text-transform: uppercase;
   }
 }
