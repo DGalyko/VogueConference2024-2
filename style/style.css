@@ -740,7 +740,8 @@ body {
         display: grid;
         height: auto;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0
+        grid-gap: 0;
+        align-items: end;
     }
 
     .partners .container a {
